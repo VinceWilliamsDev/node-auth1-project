@@ -10,7 +10,7 @@ const dbConnection = require("../database/db-config.js");
 const server = express();
 
 const sessionConfiguration = {
-    name: "monster",
+    name: "login",
     secret: "keep it secret, keep it safe!",
     cookie: {
         maxAge: 600000,
