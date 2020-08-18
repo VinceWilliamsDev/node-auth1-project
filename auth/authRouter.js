@@ -44,7 +44,7 @@ router.get("/logout", (req, res) => {
         req.session.destroy(error => {
             if (error) {
                 res.status(500).json({
-                    error: "could not log you out, please try later",
+                    error: error,
                 });
             } else {
                 res.status(204).end();
