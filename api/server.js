@@ -13,7 +13,7 @@ const sessionConfiguration = {
     name: "monster",
     secret: "keep it secret, keep it safe!",
     cookie: {
-        maxAge: 1000 * 60 * 10, 
+        maxAge: 600000,
         secure: process.env.COOKIE_SECURE || false,
         httpOnly: true, 
     },
@@ -24,7 +24,7 @@ const sessionConfiguration = {
         tablename: "sessions",
         sidfieldname: "sid",
         createtable: true,
-        clearInterval: 1000 * 60 * 60,
+        clearInterval: 3600000
     }),
 };
 
